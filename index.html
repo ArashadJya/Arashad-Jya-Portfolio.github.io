@@ -357,6 +357,31 @@
     .project-link.github { background: #1e293b; color: white; border-color: #1e293b; }
     .project-link.github:hover { background: #0f172a; border-color: #0f172a; gap: 0.8rem; }
 
+    .live-badge {
+      margin-left: auto;
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #166534;
+      background: #dcfce7;
+      border: 1px solid #86efac;
+      padding: 0.25rem 0.7rem;
+      border-radius: 40px;
+      white-space: nowrap;
+    }
+
+    .live-badge::before {
+      content: '';
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: #16a34a;
+    }
+
     /* ---------- EXPERIENCE ---------- */
     .experience-card {
       background: #ffffff;
@@ -807,7 +832,7 @@
       </div>
       <div class="grid-2col">
         
-        <!-- 1. JYA Job Portal -->
+        <!-- 1. JYA Job Portal (flagship Java full-stack project) -->
         <div class="project-card">
           <div class="project-title">
             <i class="fas fa-briefcase"></i> JYA Job Portal
@@ -830,7 +855,33 @@
           </div>
         </div>
 
-        <!-- 2. Spring Boot RESTful Web Service -->
+        <!-- 2. ClinicAssist AI (live demo) -->
+        <div class="project-card">
+          <div class="project-title">
+            <i class="fas fa-stethoscope"></i> ClinicAssist AI – Patient Enquiry Triage
+            <span class="live-badge">Live</span>
+          </div>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Streamlit</span>
+            <span>Google Gemini</span>
+            <span>Prompt Engineering</span>
+            <span>Pytest</span>
+          </div>
+          <div class="project-desc">
+            AI-powered web app that sorts patient enquiries by category and urgency and drafts a polite reply for clinic staff. Engineered Gemini prompts return structured JSON under strict safety rules (no diagnosis or medical advice). Separate Patient view and password-protected Staff view with an urgency-sorted queue and dashboard,(Note-Staff Login Password-1234) 
+          </div>
+          <div class="project-links">
+            <a href="https://clinic-assist-ai-tool-nmb7qyzhkdld6yrysxyv6r.streamlit.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+              <i class="fas fa-globe"></i> Live Demo
+            </a>
+            <a href="https://github.com/ArashadJya/Clinic-Assist-AI-Tool" target="_blank" rel="noopener noreferrer" class="project-link github">
+              <i class="fab fa-github"></i> GitHub Code
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Spring Boot RESTful Web Service -->
         <div class="project-card">
           <div class="project-title">
             <i class="fas fa-leaf"></i> Spring Boot RESTful Web Service
@@ -852,7 +903,32 @@
           </div>
         </div>
 
-        <!-- 3. Job Boat -->
+        <!-- 4. Paddy Price Calculator (live demo) -->
+        <div class="project-card">
+          <div class="project-title">
+            <i class="fas fa-calculator"></i> Paddy Price Calculator
+            <span class="live-badge">Live</span>
+          </div>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>PDF Generation</span>
+          </div>
+          <div class="project-desc">
+            Fast, backend-free web tool for pricing paddy. Bora weights are entered one by one, 1 kg is deducted per bora, and the total is calculated from the price per kg using exact integer arithmetic. Generates a downloadable PDF slip, shares it on WhatsApp, and keeps data on the device.
+          </div>
+          <div class="project-links">
+            <a href="https://arashadjya.github.io/Paddy-Price-calculator-app/" target="_blank" rel="noopener noreferrer" class="project-link">
+              <i class="fas fa-globe"></i> Live Demo
+            </a>
+            <a href="https://github.com/ArashadJya/Paddy-Price-calculator-app" target="_blank" rel="noopener noreferrer" class="project-link github">
+              <i class="fab fa-github"></i> GitHub Code
+            </a>
+          </div>
+        </div>
+
+        <!-- 5. Job Boat -->
         <div class="project-card">
           <div class="project-title">
             <i class="fas fa-ship"></i> Job Boat – Resume-to-Job Matching Tool
